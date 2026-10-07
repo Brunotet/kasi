@@ -1,0 +1,22 @@
+# Kasisite
+
+> Kasisite is a South African web design studio. It builds fast, mobile-friendly websites for small businesses at fixed prices, working remotely with clients across South Africa.
+
+## Plans (prices in South African rand)
+- Starter: R1 499 once off. Up to 5 pages, hosting, free domain and SSL for the first year, WhatsApp button. Live in 7 days.
+- Business: R1 199 once off, then R499 a month. Up to 10 pages, SEO, up to 4 small edits a month, one blog post a month, WhatsApp support, Google Business Profile setup, up to 2 custom business emails. Live in 7 days.
+- Ecommerce: R3 499 once off, then R599 a month. Everything in Business plus up to 50 products, payment links and WhatsApp orders. Live in 2 to 4 weeks.
+- Payment: 50% to start and 50% when the site is finished.
+
+## Pages
+- [Pricing](https://kasisite.co.za/pricing/)
+- [Our work](https://kasisite.co.za/work/)
+- [About](https://kasisite.co.za/about/)
+- [Contact](https://kasisite.co.za/contact/)
+
+## Blog
+- [How much does a website cost in South Africa?](https://kasisite.co.za/blog/website-cost-south-africa/): What small business websites cost in South Africa in 2026, what quotes often leave out, and what to ask before you pay.
+
+## Contact
+- WhatsApp: +27 79 458 4983
+- Hours: Monday to Friday, 08:00 to 17:00
