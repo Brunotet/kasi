@@ -313,7 +313,7 @@ h3 { font-stretch: 90%; font-weight: 800; font-size: 1.35rem; line-height: 1.15;
 .post-item p { max-width: 62ch; }
 
 /* ---------- Footer ---------- */
-.site-footer { background: var(--ink); color: #fff; padding: 3rem 0 6.5rem; }
+.site-footer { background: var(--ink); color: #fff; padding: 3rem 0 4.5rem; }
 .foot-grid { display: grid; gap: 2rem; }
 @media (min-width: 800px) { .foot-grid { grid-template-columns: 1.4fr 1fr 1fr; } }
 .site-footer h2 { font-size: 1.15rem; font-stretch: 85%; text-transform: none; font-weight: 800; margin-bottom: .6rem; }
@@ -397,3 +397,8 @@ h3 { font-stretch: 90%; font-weight: 800; font-size: 1.35rem; line-height: 1.15;
 /* Real site screenshots inside the phone frame */
 figure.phone { margin: 0; }
 .phone img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: top; }
+
+/* Show the full screenshot, uncropped, at its natural proportions */
+.phone, figure.phone { aspect-ratio: auto; height: auto; }
+.phone img { height: auto; object-fit: contain; }
+html { background: var(--ink); }
