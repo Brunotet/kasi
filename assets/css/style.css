@@ -78,10 +78,10 @@ h3 { font-stretch: 90%; font-weight: 800; font-size: 1.35rem; line-height: 1.15;
 }
 .logo-mark { width: 2.1rem; height: 2.1rem; flex: none; }
 .nav {
-  display: flex; gap: 1.25rem; overflow-x: auto; max-width: 100%;
-  font-weight: 700; font-stretch: 85%; scrollbar-width: none;
+  display: flex; gap: 1.25rem; max-width: 100%;
+  font-weight: 700; font-stretch: 85%;
 }
-.nav::-webkit-scrollbar { display: none; }
+.nav-wa, .nav-toggle, .burger { display: none; }
 .nav a { text-decoration: none; padding: .4rem 0; white-space: nowrap; border-bottom: 3px solid transparent; }
 .nav a:hover, .nav a[aria-current="page"] { border-bottom-color: var(--brick); }
 .site-header .header-cta { display: none; }
@@ -402,3 +402,88 @@ figure.phone { margin: 0; }
 .phone, figure.phone { aspect-ratio: auto; height: auto; }
 .phone img { height: auto; object-fit: contain; }
 html { background: var(--ink); }
+
+/* ================= Phone layout (under 900px) ================= */
+@media (max-width: 899px) {
+  .site-header { position: sticky; top: 0; z-index: 60; }
+  .site-header .wrap { flex-wrap: wrap; gap: 0; padding-top: .6rem; padding-bottom: .6rem; }
+  .logo { font-size: 1.7rem; }
+  .logo-mark { width: 1.9rem; height: 1.9rem; }
+  .nav-toggle { display: block; position: absolute; opacity: 0; width: 1px; height: 1px; }
+  .burger {
+    display: flex; flex-direction: column; justify-content: center; gap: 5px; cursor: pointer;
+    width: 3rem; height: 3rem; padding: 0 .7rem; border: 3px solid var(--ink); border-radius: 8px; background: var(--wall);
+  }
+  .burger span { display: block; height: 3px; background: var(--ink); border-radius: 2px; transition: transform .15s ease, opacity .15s ease; }
+  .nav-toggle:focus-visible + .burger { outline: 3px solid var(--cobalt); outline-offset: 3px; }
+  .nav-toggle:checked + .burger span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+  .nav-toggle:checked + .burger span:nth-child(2) { opacity: 0; }
+  .nav-toggle:checked + .burger span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+  .nav { display: none; flex-direction: column; gap: 0; width: 100%; flex-basis: 100%; margin-top: .6rem; border-top: 3px solid var(--ink); font-size: 1.15rem; }
+  .nav-toggle:checked ~ .nav { display: flex; }
+  .nav a { padding: .85rem .2rem; border-bottom: 2px solid rgba(13,27,62,.2); }
+  .nav a[aria-current="page"] { border-bottom-color: var(--brick); border-bottom-width: 3px; }
+  .nav .nav-wa {
+    display: flex; align-items: center; justify-content: center; gap: .6rem; margin: .9rem 0 .3rem; padding: .8rem 1rem;
+    background: var(--wa); border: 3px solid var(--ink); border-radius: 6px; box-shadow: 4px 4px 0 var(--ink); font-weight: 800;
+  }
+  .nav .nav-wa svg { width: 1.3rem; height: 1.3rem; }
+}
+
+@media (max-width: 699px) {
+  /* hero: centred, everything above the fold on a phone */
+  .hero { padding: 1.4rem 0 1.8rem; text-align: center; }
+  .hero-grid { gap: 1.1rem; }
+  .hero h1 { max-width: none; font-size: clamp(2.3rem, 11.5vw, 3.2rem); margin-bottom: .7rem; }
+  .hero .lede { font-size: 1rem; line-height: 1.45; margin: 0 auto; max-width: 34ch; }
+  .hero-proof { margin: .9rem auto 0; gap: .3rem; display: inline-grid; text-align: left; }
+  .hero-proof li { font-size: .95rem; }
+  .hero .btn-row { flex-direction: column; gap: .7rem; margin-top: 1.1rem; }
+  .hero .btn-row .btn { width: 100%; min-height: 3rem; }
+  .hero .tag { transform: none; animation: none; justify-self: center; max-width: none; width: 100%; padding: .7rem 1rem; display: flex; align-items: baseline; justify-content: center; gap: .6rem; box-shadow: 4px 4px 0 var(--ink); }
+  .hero .tag::before { display: none; }
+  .hero .tag .amount { font-size: 2.6rem; margin: 0; }
+  .hero .tag .from { font-size: 1.05rem; }
+  .hero .tag .notes { display: none; }
+
+  /* inner page headers centred too */
+  .page-head { text-align: center; }
+  .page-head h1 { max-width: none; }
+  .page-head .lede { margin-left: auto; margin-right: auto; }
+  .page-head .crumbs { text-align: center; }
+
+  /* footer: two columns */
+  .site-footer { padding: 2.2rem 0 4.5rem; }
+  .foot-grid { grid-template-columns: 1fr 1fr; gap: 1.6rem 1.2rem; }
+  .foot-grid > div:first-child { grid-column: 1 / -1; }
+
+  /* tables become stacked cards */
+  .table-wrap { overflow: visible; border: 0; background: none; margin: 1rem 0 1.6rem; }
+  .table-wrap table { min-width: 0; display: block; }
+  .table-wrap caption { display: block; border: 3px solid var(--ink); border-radius: 8px; background: #fff; margin-bottom: .9rem; }
+  .table-wrap thead { display: none; }
+  .table-wrap tbody { display: block; }
+  .table-wrap tr { display: block; border: 3px solid var(--ink); border-radius: 8px; background: #fff; margin-bottom: .9rem; overflow: hidden; }
+  .table-wrap th, .table-wrap td { display: block; padding: .55rem .9rem; border-bottom: 2px solid rgba(13,27,62,.25); }
+  .table-wrap tbody th { background: var(--wall); border-bottom: 3px solid var(--ink); font-size: 1.05rem; }
+  .table-wrap td::before { content: attr(data-label); display: block; font-size: .72rem; letter-spacing: .06em; text-transform: uppercase; font-weight: 800; opacity: .65; margin-bottom: .1rem; }
+  .table-wrap tbody th::before { content: none; }
+  .table-wrap tr:last-child th, .table-wrap tr:last-child td { border-bottom: 2px solid rgba(13,27,62,.25); }
+  .table-wrap tr td:last-child { border-bottom: 0; }
+  .table-wrap tr.hl { background: #fff4b8; }
+  .table-wrap td.num { white-space: normal; }
+}
+
+@media (max-width: 699px) {
+  .hero { padding-top: 1.1rem; padding-bottom: 1.5rem; }
+  .hero h1 { margin-bottom: .55rem; }
+  .hero .lede { font-size: .95rem; max-width: 38ch; }
+  .hero-proof { margin-top: .7rem; }
+  .hero .btn-row { margin-top: .9rem; gap: .6rem; }
+  .hero .btn-row .btn { min-height: 2.8rem; padding-top: .45rem; padding-bottom: .45rem; font-size: 1rem; }
+  .hero-grid { gap: .9rem; }
+  /* floating WhatsApp becomes a round icon so it never hides content */
+  .float-wa { min-height: 0; width: 3.4rem; height: 3.4rem; padding: 0; justify-content: center; font-size: 0; gap: 0; }
+  .float-wa svg { width: 1.7rem; height: 1.7rem; }
+}
+h2[id], h3[id] { scroll-margin-top: 5rem; }
