@@ -487,3 +487,12 @@ html { background: var(--ink); }
   .float-wa svg { width: 1.7rem; height: 1.7rem; }
 }
 h2[id], h3[id] { scroll-margin-top: 5rem; }
+
+/* Contact cards */
+.contact-cards { display: grid; gap: 1.5rem; }
+@media (min-width: 760px) { .contact-cards { grid-template-columns: 1fr 1fr; gap: 2rem; } }
+.contact-card { background: #fff; border: 3px solid var(--ink); border-radius: 10px; box-shadow: 6px 6px 0 var(--ink); padding: 1.5rem; }
+.contact-card h2 { font-size: 1.8rem; margin-bottom: .5rem; }
+.contact-big { font-stretch: 75%; font-weight: 900; font-size: clamp(1.6rem, 6vw, 2.1rem); line-height: 1.05; margin: 0 0 .6rem; overflow-wrap: anywhere; }
+.contact-big a { text-decoration-thickness: 3px; text-underline-offset: 4px; }
+.site-footer li a { overflow-wrap: anywhere; }
