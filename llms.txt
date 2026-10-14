@@ -4,7 +4,7 @@
 
 ## Plans (prices in South African rand)
 - Starter: R1 499 once off. Up to 5 pages, hosting, free domain and SSL for the first year, WhatsApp button. Live in 7 days.
-- Business: R1 199 once off, then R499 a month. Up to 10 pages, SEO, up to 4 small edits a month, one blog post a month, WhatsApp support, Google Business Profile setup, up to 2 custom business emails. Live in 7 days.
+- Business: R899 once off, then R499 a month. Up to 10 pages, SEO, up to 4 small edits a month, one blog post a month, WhatsApp support, Google Business Profile setup, up to 2 custom business emails. Live in 7 days.
 - Ecommerce: R3 499 once off, then R599 a month. Everything in Business plus up to 50 products, payment links and WhatsApp orders. Live in 2 to 4 weeks.
 - Payment: 50% to start and 50% when the site is finished.
 
@@ -15,7 +15,22 @@
 - [About](https://kasisite.co.za/about/)
 - [Contact](https://kasisite.co.za/contact/)
 
+## Services
+- [Small business website design in South Africa](https://kasisite.co.za/services/small-business-website-design/): Starter and Business websites, live in 7 days.
+- [Ecommerce website design in South Africa](https://kasisite.co.za/services/ecommerce-website-design/): Online shops with payment links and WhatsApp orders.
+- [Website SEO for small businesses in South Africa](https://kasisite.co.za/services/website-seo-south-africa/): Monthly SEO work, included in the Business plan.
+
+## Websites by industry
+- [Website design for mechanics and auto workshops](https://kasisite.co.za/websites-for/mechanics/): Services, prices and WhatsApp quotes for workshops.
+- [Website design for barbers and salons](https://kasisite.co.za/websites-for/barbers/): Style gallery, price list and WhatsApp bookings.
+- [Website design for caterers](https://kasisite.co.za/websites-for/caterers/): Menus, packages and quote requests on WhatsApp.
+- [Website design for builders and contractors](https://kasisite.co.za/websites-for/builders/): Projects, services and quote requests for trades.
+- [Website design for photographers](https://kasisite.co.za/websites-for/photographers/): A fast portfolio, packages and WhatsApp bookings.
+- [Website design for repair shops](https://kasisite.co.za/websites-for/repair-shops/): Repairs, prices and WhatsApp quotes for workshops.
+
 ## Blog
+- [How to set up a Google Business Profile in South Africa (2026 guide)](https://kasisite.co.za/blog/google-business-profile-south-africa/): How to set up a Google Business Profile in South Africa: the rules, hiding your address, choosing categories, getting reviews and what helps you rank.
+- [How to choose a web designer in South Africa: 12 questions to ask](https://kasisite.co.za/blog/choose-a-web-designer-south-africa/): 12 questions to ask before you hire a web designer in South Africa, what a good answer sounds like, and the warning signs to walk away from.
 - [How much does a website cost in South Africa? 2026 price guide](https://kasisite.co.za/blog/website-cost-south-africa/): What a website costs in South Africa in 2026: prices by type of site, monthly running costs, online store and payment fees, with sources.
 
 ## Contact
